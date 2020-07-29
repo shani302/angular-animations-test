@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { BasicsComponent } from './basics/basics.component';
+import { InOutComponent } from './in-out/in-out.component';
 
 @NgModule({
   imports:      [ 
@@ -14,10 +15,11 @@ import { BasicsComponent } from './basics/basics.component';
     FormsModule,
     BrowserAnimationsModule,
     RouterModule.forRoot([
-      { path: 'basics', component: BasicsComponent }
+      { path: 'basics', component: BasicsComponent },
+      { path: 'in-out', component: InOutComponent }
     ])
     ],
-  declarations: [ AppComponent, HelloComponent, BasicsComponent ],
+  declarations: [ AppComponent, HelloComponent, BasicsComponent, InOutComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
