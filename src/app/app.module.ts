@@ -9,6 +9,7 @@ import { HelloComponent } from './hello.component';
 import { BasicsComponent } from './basics/basics.component';
 import { InOutComponent } from './in-out/in-out.component';
 import { QueryStaggerComponent } from './query-stagger/query-stagger.component';
+import { FilteringComponent } from './filtering/filtering.component';
 
 @NgModule({
   imports:      [ 
@@ -18,10 +19,11 @@ import { QueryStaggerComponent } from './query-stagger/query-stagger.component';
     RouterModule.forRoot([
       { path: 'basics', component: BasicsComponent },
       { path: 'in-out', component: InOutComponent },
-      { path: 'query-stagger', component: QueryStaggerComponent }
+      { path: 'query-stagger', component: QueryStaggerComponent },
+      { path: 'filtering', component: FilteringComponent }
     ])
     ],
-  declarations: [ AppComponent, HelloComponent, BasicsComponent, InOutComponent, QueryStaggerComponent ],
+  declarations: [ AppComponent, HelloComponent, BasicsComponent, InOutComponent, QueryStaggerComponent, FilteringComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
