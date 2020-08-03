@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { BasicsComponent } from './basics/basics.component';
 import { InOutComponent } from './in-out/in-out.component';
+import { QueryStaggerComponent } from './query-stagger/query-stagger.component';
 
 @NgModule({
   imports:      [ 
@@ -16,10 +17,11 @@ import { InOutComponent } from './in-out/in-out.component';
     BrowserAnimationsModule,
     RouterModule.forRoot([
       { path: 'basics', component: BasicsComponent },
-      { path: 'in-out', component: InOutComponent }
+      { path: 'in-out', component: InOutComponent },
+      { path: 'query-stagger', component: QueryStaggerComponent }
     ])
     ],
-  declarations: [ AppComponent, HelloComponent, BasicsComponent, InOutComponent ],
+  declarations: [ AppComponent, HelloComponent, BasicsComponent, InOutComponent, QueryStaggerComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
